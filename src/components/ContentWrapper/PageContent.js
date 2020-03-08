@@ -1,4 +1,6 @@
 import React from 'react';
+import TopCard from './TopCard';
+import Category from './Category';
 
 function PageContent(){
     return (
@@ -7,52 +9,9 @@ function PageContent(){
                 <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
             </div>
             <div className="row">
-                <div className="col-md-4 mb-4">
-                    <div className="card border-left-primary shadow h-100 py-2">
-                        <div className="card-body">
-                            <div className="row no-gutters align-items-center">
-                                <div className="col mr-2">
-                                    <div className="text-xs font-weight-bold text-primary text-uppercase mb-1"> Products in Data Base</div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">135</div>
-                                </div>
-                                <div className="col-auto">
-                                    <i className="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <div className="card border-left-success shadow h-100 py-2">
-                        <div className="card-body">
-                            <div className="row no-gutters align-items-center">
-                                <div className="col mr-2">
-                                    <div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Amount in products</div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">$546.456</div>
-                                </div>
-                                <div className="col-auto">
-                                    <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-4 mb-4">
-                    <div className="card border-left-warning shadow h-100 py-2">
-                        <div className="card-body">
-                            <div className="row no-gutters align-items-center">
-                                <div className="col mr-2">
-                                    <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Users quantity
-                                    </div>
-                                    <div className="h5 mb-0 font-weight-bold text-gray-800">38</div>
-                                </div>
-                                <div className="col-auto">
-                                    <i className="fas fa-user-check fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <TopCard borderType = 'primary' title='Products in Data Base' icon= 'fa-clipboard-list' number = '135' />
+                <TopCard borderType = 'success' title='Amount in products' icon= 'fa-dollar-sign' number = '$546.456' />
+                <TopCard borderType = 'warning' title='Users quantity' icon= 'fa-user-check' number = '38' />
             </div>
             <div className="row">
                 <div className="col-lg-6 mb-4">
@@ -69,7 +28,6 @@ function PageContent(){
                         </div>
                     </div>
                 </div>
-
                 <div className="col-lg-6 mb-4">						
                     <div className="card shadow mb-4">
                         <div className="card-header py-3">
@@ -77,48 +35,12 @@ function PageContent(){
                         </div>
                         <div className="card-body">
                             <div className="row">
-                                <div className="col-lg-6 mb-4">
-                                    <div className="card bg-info text-white shadow">
-                                        <div className="card-body">
-                                            Category 01
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 mb-4">
-                                    <div className="card bg-info text-white shadow">
-                                        <div className="card-body">
-                                            Category 02
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 mb-4">
-                                    <div className="card bg-info text-white shadow">
-                                        <div className="card-body">
-                                            Category 03
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 mb-4">
-                                    <div className="card bg-info text-white shadow">
-                                        <div className="card-body">
-                                            Category 04
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 mb-4">
-                                    <div className="card bg-info text-white shadow">
-                                        <div className="card-body">
-                                            Category 05
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 mb-4">
-                                    <div className="card bg-info text-white shadow">
-                                        <div className="card-body">
-                                            Category 06
-                                        </div>
-                                    </div>
-                                </div>
+                                <Category title='Category 01'/>
+                                <Category title='Category 02'/>
+                                <Category title='Category 03'/>
+                                <Category title='Category 04'/>
+                                <Category title='Category 05'/>
+                                <Category title='Category 06'/>
                             </div>
                         </div>
                     </div>
